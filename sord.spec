@@ -13,6 +13,7 @@ License:        MIT-like
 Group:          System/Libraries
 
 BuildRequires:  waf, pkgconfig
+BuildRequires:  glib2-devel
 BuildRequires:  serd-devel
 
 %description
