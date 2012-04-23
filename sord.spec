@@ -1,5 +1,5 @@
 Name:           sord
-Version:        0.5.0
+Version:        0.8.0
 Release:        %mkrel 1
 Summary:        Lightweight C library for storing RDF data in memory
 
@@ -7,7 +7,7 @@ Summary:        Lightweight C library for storing RDF data in memory
 %define lib_name        %mklibname %{name} %{lib_major}
 %define lib_name_devel  %mklibname %{name} -d
 
-Source:         http://download.drobilla.net/%{name}-%{version}.tar.bz2
+Source0:         http://download.drobilla.net/%{name}-%{version}.tar.bz2
 URL:            http://drobilla.net/software/%{name}/
 License:        MIT-like
 Group:          System/Libraries
