@@ -20,10 +20,11 @@ BuildRequires:  serd-devel
 Lightweight C library for storing RDF data in memory.
 
 %files
-%defattr(-,root,root,-)
 %doc COPYING README
 %doc %{_mandir}/man1/sordi.*
 %{_bindir}/sordi
+%{_bindir}/sord_validate
+
 
 #-----------------------------------
 %package -n %{lib_name}
@@ -36,7 +37,6 @@ Lightweight C library for storing RDF data in memory.
 
 
 %files -n %{lib_name}
-%defattr(-,root,root,-)
 %{_libdir}/lib%{name}-%{lib_major}.so.*
 
 #-----------------------------------
@@ -51,7 +51,6 @@ Provides:       %{name}-devel = %{version}-%{release}
 Development files needed to build applications against sord.
 
 %files -n %{lib_name_devel}
-%defattr(-,root,root,-)
 %{_libdir}/lib%{name}-%{lib_major}.so
 %dir %{_includedir}/%{name}-%{lib_major}/%{name}
 %{_includedir}/%{name}-%{lib_major}/%{name}/*.h
