@@ -1,6 +1,6 @@
 Name:           sord
 Version:        0.10.0
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Lightweight C library for storing RDF data in memory
 
 %define lib_major       0
