@@ -1,2 +1,4 @@
+removed_sources:
+  sord-0.10.0.tar.bz2: 09504b3372f64775e2161e458a2afdc33a05989d
 sources:
-  "sord-0.10.0.tar.bz2": 09504b3372f64775e2161e458a2afdc33a05989d
+  sord-0.12.0.tar.bz2: 8a1ae8c9f90bd0b3632841898c6500a8293d6ed2

@@ -1,6 +1,8 @@
+%define debug_package %nil
+
 Name:           sord
-Version:        0.10.0
-Release:        %mkrel 2
+Version:        0.12.0
+Release:        1
 Summary:        Lightweight C library for storing RDF data in memory
 
 %define lib_major       0
@@ -22,6 +24,7 @@ Lightweight C library for storing RDF data in memory.
 %files
 %doc COPYING README
 %doc %{_mandir}/man1/sordi.*
+%doc %{_mandir}/man1/sord_*
 %{_bindir}/sordi
 %{_bindir}/sord_validate
 
@@ -66,14 +69,7 @@ Development files needed to build applications against sord.
 ./waf
 
 %install
-rm -rf %{buildroot}
-
 ./waf install --destdir=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
-
-
 
 %changelog
 * Wed Aug 29 2012 Frank Kober <emuse@mandriva.org> 0.10.0-2mdv2012.0
