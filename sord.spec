@@ -1,8 +1,8 @@
 %define debug_package %nil
 
 Name:           sord
-Version:        0.12.0
-Release:        2
+Version:        0.14.0
+Release:        1
 Summary:        Lightweight C library for storing RDF data in memory
 
 %define lib_major       0
@@ -15,7 +15,7 @@ License:        MIT-like
 Group:          System/Libraries
 
 BuildRequires:  waf, pkgconfig
-BuildRequires:  glib2-devel
+BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  serd-devel
 
 %description
