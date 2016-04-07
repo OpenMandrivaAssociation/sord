@@ -66,7 +66,7 @@ Development files needed to build applications against sord.
 
 %build
 %{__python2} ./waf configure --prefix=%{_prefix} --mandir=%{_mandir} --libdir=%{_libdir} CC=%{__cc}
-%{__python2} ./waf %{__cc}
+%{__python2} ./waf
 
 %install
 %{__python2} ./waf install --destdir=%{buildroot}
