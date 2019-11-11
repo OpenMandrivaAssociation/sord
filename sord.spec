@@ -22,7 +22,7 @@ BuildRequires:  serd-devel
 Lightweight C library for storing RDF data in memory.
 
 %files
-%doc COPYING README
+%doc COPYING
 %doc %{_mandir}/man1/sordi.*
 %doc %{_mandir}/man1/sord_*
 %{_bindir}/sordi
