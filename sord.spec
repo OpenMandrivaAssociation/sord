@@ -1,7 +1,7 @@
 %define debug_package %nil
 
 Name:           sord
-Version:	0.16.4
+Version:	0.16.6
 Release:	1
 Summary:        Lightweight C library for storing RDF data in memory
 
