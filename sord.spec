@@ -1,3 +1,6 @@
+# Work around incomplete debug packages
+%global _empty_manifest_terminate_build 0
+
 Name:           sord
 Version:	0.16.8
 Release:	1
