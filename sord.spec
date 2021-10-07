@@ -1,5 +1,3 @@
-%define debug_package %nil
-
 Name:           sord
 Version:	0.16.8
 Release:	1
