@@ -2,7 +2,7 @@
 %global _empty_manifest_terminate_build 0
 
 Name:           sord
-Version:	0.16.8
+Version:	0.16.10
 Release:	1
 Summary:        Lightweight C library for storing RDF data in memory
 
@@ -17,7 +17,7 @@ Group:          System/Libraries
 
 BuildRequires:  waf, pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
-BuildRequires:  serd-devel
+BuildRequires:  pkgconfig(serd-0)
 
 %description
 Lightweight C library for storing RDF data in memory.
