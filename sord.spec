@@ -19,6 +19,8 @@ BuildRequires:  meson
 BuildRequires:  waf, pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(serd-0)
+BuildRequires:  doxygen
+BuildRequires:  python3dist(sphinx)
 
 %description
 Lightweight C library for storing RDF data in memory.
@@ -67,8 +69,8 @@ Development files needed to build applications against sord.
 %setup -q
 
 %build
-python ./waf configure --prefix=%{_prefix} --mandir=%{_mandir} --libdir=%{_libdir} CC=%{__cc}
-python ./waf
+%meson
+%meson_build
 
 %install
-python ./waf install --destdir=%{buildroot}
+%meson_install
