@@ -2,7 +2,7 @@
 %global _empty_manifest_terminate_build 0
 
 Name:           sord
-Version:	0.16.10
+Version:	0.16.12
 Release:	1
 Summary:        Lightweight C library for storing RDF data in memory
 
@@ -15,15 +15,19 @@ URL:            http://drobilla.net/software/%{name}/
 License:        MIT-like
 Group:          System/Libraries
 
+BuildRequires:  meson
 BuildRequires:  waf, pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(serd-0)
+BuildRequires:  doxygen
+BuildRequires:  python3dist(sphinx)
 
 %description
 Lightweight C library for storing RDF data in memory.
 
 %files
 %doc COPYING
+%doc %{_datadir}/doc/sord-0/
 %doc %{_mandir}/man1/sordi.*
 %doc %{_mandir}/man1/sord_*
 %{_bindir}/sordi
@@ -66,8 +70,8 @@ Development files needed to build applications against sord.
 %setup -q
 
 %build
-python ./waf configure --prefix=%{_prefix} --mandir=%{_mandir} --libdir=%{_libdir} CC=%{__cc}
-python ./waf
+%meson
+%meson_build
 
 %install
-python ./waf install --destdir=%{buildroot}
+%meson_install
