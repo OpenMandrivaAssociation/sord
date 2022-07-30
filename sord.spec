@@ -27,6 +27,7 @@ Lightweight C library for storing RDF data in memory.
 
 %files
 %doc COPYING
+%doc %{_datadir}/doc/sord-0/
 %doc %{_mandir}/man1/sordi.*
 %doc %{_mandir}/man1/sord_*
 %{_bindir}/sordi
