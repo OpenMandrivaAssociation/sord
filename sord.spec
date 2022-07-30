@@ -2,7 +2,7 @@
 %global _empty_manifest_terminate_build 0
 
 Name:           sord
-Version:	0.16.10
+Version:	0.16.12
 Release:	1
 Summary:        Lightweight C library for storing RDF data in memory
 
@@ -15,6 +15,7 @@ URL:            http://drobilla.net/software/%{name}/
 License:        MIT-like
 Group:          System/Libraries
 
+BuildRequires:  meson
 BuildRequires:  waf, pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(serd-0)
