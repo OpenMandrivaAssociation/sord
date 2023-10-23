@@ -10,7 +10,7 @@ Summary:        Lightweight C library for storing RDF data in memory
 %define lib_name        %mklibname %{name} %{lib_major}
 %define lib_name_devel  %mklibname %{name} -d
 
-Source0:        https://download.drobilla.net/%{name}-%{version}.tar.bz2
+Source0:        https://download.drobilla.net/%{name}-%{version}.tar.xz
 URL:            https://drobilla.net/software/%{name}/
 License:        MIT-like
 Group:          System/Libraries
