@@ -19,6 +19,7 @@ BuildRequires:  meson
 BuildRequires:  waf, pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(serd-0)
+BuildRequires:  pkgconfig(zix-0)
 BuildRequires:  doxygen
 BuildRequires:  python3dist(sphinx)
 
