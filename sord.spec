@@ -2,8 +2,8 @@
 %global _empty_manifest_terminate_build 0
 
 Name:           sord
-Version:	0.16.16
-Release:	2
+Version:	0.16.18
+Release:	1
 Summary:        Lightweight C library for storing RDF data in memory
 
 %define lib_major       0
